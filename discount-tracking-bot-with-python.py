@@ -33,14 +33,14 @@ def email_gonder(yeni_fiyat):
     server.ehlo()
 
 
-    server.login('seymencicek2002@gmail.com', 'lvmw doae qhhv mpun')
+    server.login('trial20022@gmail.com', '123456')
 
     baslik = 'Fiyat dususu!'
     uyari = f'Bekledigin fiyatin altina dustu! {yeni_fiyat} TL! Bu linkten kontrol et: {url}'
 
     icerik = f"Subject: {baslik}\n\n{uyari}"
 
-    server.sendmail('seymencicek2002@gmail.com','selenaycicek2004@gmail.com',icerik)
+    server.sendmail('trial2002@gmail.com','trial2001@gmail.com',icerik)
 
     print('Mesaj gonderildi')
 
