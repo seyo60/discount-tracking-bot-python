@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import smtplib
 import time
 
-url = 'https://www.trendyol.com/lego/marvel-hulkbuster-wakanda-savasi-76247-8-yas-ve-uzeri-cocuklar-icin-yapim-seti-385-parca-p-635014005?boutiqueId=634459&merchantId=968'
+url = 'https://www.hepsiburada.com/nike-renew-elevate-iii-erkek-basketbol-ayakkabisi-dd9304-006-siyah-pm-HBC00006SH7AP'
 
 headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
@@ -19,7 +19,7 @@ def check_price():
         new_price = price.replace(".", "").replace(",", ".")
         new_price = float(new_price.replace(" TL", "").strip())
 
-        if new_price < 1400:
+        if new_price < 2250:
             send_email(new_price)
 
     except Exception as e:
